@@ -6,6 +6,8 @@ import OnOff from "./Components/OnOff/OnOff";
 import UncontrolledAccordion from "./Components/UncontrolledAccordion/UncontrolledAccordion";
 import UncontrolledRating from "./UncontrolledRating/UncontrolledRating";
 import accordion from "./Components/Accordion/Accordion";
+import {ControlledInputWithFixedValue, UncontrolledInput} from "./Components/UncontrolledInput/UncontrolledInput";
+
 
 
 
@@ -19,12 +21,13 @@ function App(props: any) {
 
     return (
         <div className={"App"}>
-            <Rating  value={ratingValue} onClick={setRatingValue}/>
+{/*            <Rating  value={ratingValue} onClick={setRatingValue}/>
             <Accordion titleValue={'Menu'}
                        collapsed={accordionCollapsed}
                        onChange ={() => {setAccordionCollapsed(!accordionCollapsed)} } />
-            <OnOff on={switchOn} onChange={(on)=>{setSwitchOn(on)}}/>
-
+            <OnOff on={switchOn} onChange={(on)=>{setSwitchOn(on)}}/>*/}
+            <UncontrolledInput/>
+            <ControlledInputWithFixedValue/>
         </div>
     );
 }
