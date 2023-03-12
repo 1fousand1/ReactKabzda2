@@ -4,9 +4,12 @@ import Accordion from "./Components/Accordion/Accordion";
 import Rating, {RatingValueType} from "./Components/Rating/Rating";
 import OnOff from "./Components/OnOff/OnOff";
 import UncontrolledAccordion from "./Components/UncontrolledAccordion/UncontrolledAccordion";
-import UncontrolledRating from "./UncontrolledRating/UncontrolledRating";
+import UncontrolledRating from "./Components/UncontrolledRating/UncontrolledRating";
 import accordion from "./Components/Accordion/Accordion";
-import {ControlledInputWithFixedValue, UncontrolledInput} from "./Components/UncontrolledInput/UncontrolledInput";
+import {
+    GetValueOfUncontrolledInputByButtonPress,
+    UncontrolledInput
+} from "./Components/UncontrolledInput/UncontrolledInput";
 
 
 
@@ -26,8 +29,9 @@ function App(props: any) {
                        collapsed={accordionCollapsed}
                        onChange ={() => {setAccordionCollapsed(!accordionCollapsed)} } />
             <OnOff on={switchOn} onChange={(on)=>{setSwitchOn(on)}}/>*/}
-            <UncontrolledInput/>
-            <ControlledInputWithFixedValue/>
+
+            {/*<ControlledInputWithFixedValue/>*/}
+            <GetValueOfUncontrolledInputByButtonPress />
         </div>
     );
 }
