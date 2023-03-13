@@ -10,6 +10,8 @@ import {
     GetValueOfUncontrolledInputByButtonPress,
     UncontrolledInput
 } from "./Components/UncontrolledInput/UncontrolledInput";
+import ControlledInput from "./Components/ControlledInput/ControlledInput";
+import ControlledCheckbox from "./Components/ControlledCheckbox/ControlledCheckbox";
 
 
 
@@ -31,7 +33,10 @@ function App(props: any) {
             <OnOff on={switchOn} onChange={(on)=>{setSwitchOn(on)}}/>*/}
 
             {/*<ControlledInputWithFixedValue/>*/}
-            <GetValueOfUncontrolledInputByButtonPress />
+            {/*<GetValueOfUncontrolledInputByButtonPress />*/}
+            {/*<ControlledInput/>*/}
+            <ControlledCheckbox/>
+            <Accordion titleValue={'menu'} collapsed={accordionCollapsed} onChange={() => {setAccordionCollapsed(!accordionCollapsed)} } items={[{title:"Mimuch", value: 1}, {title:"Valera", value: 2} , {title:"Artem", value: 3}, {title: "Vicktor", value:4}]} onClick={(value)=>{alert('user with ID ${id} should be happy')}}/>
         </div>
     );
 }
