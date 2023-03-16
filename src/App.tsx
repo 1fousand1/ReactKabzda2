@@ -12,6 +12,8 @@ import {
 } from "./Components/UncontrolledInput/UncontrolledInput";
 import ControlledInput from "./Components/ControlledInput/ControlledInput";
 import ControlledCheckbox from "./Components/ControlledCheckbox/ControlledCheckbox";
+import {Select} from "./Components/Select/Select";
+import Select2 from "./Components/Select/Select2";
 
 
 
@@ -24,6 +26,7 @@ function App(props: any) {
     let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
     let [switchOn, setSwitchOn] = useState<boolean>(false)
 
+
     return (
         <div className={"App"}>
 {/*            <Rating  value={ratingValue} onClick={setRatingValue}/>
@@ -35,8 +38,15 @@ function App(props: any) {
             {/*<ControlledInputWithFixedValue/>*/}
             {/*<GetValueOfUncontrolledInputByButtonPress />*/}
             {/*<ControlledInput/>*/}
-            <ControlledCheckbox/>
-            <Accordion titleValue={'menu'} collapsed={accordionCollapsed} onChange={() => {setAccordionCollapsed(!accordionCollapsed)} } items={[{title:"Mimuch", value: 1}, {title:"Valera", value: 2} , {title:"Artem", value: 3}, {title: "Vicktor", value:4}]} onClick={(value)=>{alert('user with ID ${id} should be happy')}}/>
+{/*            <ControlledCheckbox/>
+            <Accordion titleValue={'menu'} collapsed={accordionCollapsed} onChange={() => {setAccordionCollapsed(!accordionCollapsed)} } items={[{title:"Mimuch", value: 1}, {title:"Valera", value: 2} , {title:"Artem", value: 3}, {title: "Vicktor", value:4}]} onClick={(value)=>{alert('user with ID ${id} should be happy')}}/>*/}
+
+            <Select items={[{title:"Mimuch", value: 1}, {title:"Valera", value: 2} , {title:"Artem", value: 3}, {title: "Vicktor", value:4}]} value={1}  onChange={()=>{}}/>
+            <Select2 onChange={()=>{alert('value changed')}} value={"1"} items={[
+                {value: "1", title: "Minsk"},
+                {value: "2", title: "Moscow"},
+                {value: "3", title: "Kiev"}
+            ]}/>
         </div>
     );
 }

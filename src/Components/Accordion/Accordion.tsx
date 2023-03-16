@@ -6,7 +6,6 @@ type ItemType = {
 }
 
 
-
 type AccordionPropsType = {
     titleValue: string
     collapsed: boolean
@@ -27,7 +26,6 @@ const Accordion = (props: AccordionPropsType) => {
       )
 
 };
-
 
 
 type AccordionTitlePropsType = {
