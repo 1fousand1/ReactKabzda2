@@ -25,6 +25,7 @@ function App(props: any) {
     let [ratingValue, setRatingValue] = useState<RatingValueType>(0);
     let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
     let [switchOn, setSwitchOn] = useState<boolean>(false)
+    const [value, setValue] = useState('2')
 
 
     return (
@@ -42,7 +43,8 @@ function App(props: any) {
             <Accordion titleValue={'menu'} collapsed={accordionCollapsed} onChange={() => {setAccordionCollapsed(!accordionCollapsed)} } items={[{title:"Mimuch", value: 1}, {title:"Valera", value: 2} , {title:"Artem", value: 3}, {title: "Vicktor", value:4}]} onClick={(value)=>{alert('user with ID ${id} should be happy')}}/>*/}
 
             <Select items={[{title:"Mimuch", value: 1}, {title:"Valera", value: 2} , {title:"Artem", value: 3}, {title: "Vicktor", value:4}]} value={1}  onChange={()=>{}}/>
-            <Select2 onChange={()=>{alert('value changed')}} value={"1"} items={[
+
+            <Select2 onChange={setValue} value={value} items={[
                 {value: "1", title: "Minsk"},
                 {value: "2", title: "Moscow"},
                 {value: "3", title: "Kiev"}

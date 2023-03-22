@@ -1,5 +1,8 @@
-.select {
+.select .main{
     border: 1px solid black;
+    display:inline-block;
+    min-height: 20px;
+    min-width: 40px;
 
 }
 .items{
@@ -8,6 +11,7 @@
     border: 1px solid black;
 }
 
-.select.active .items {
-    display:block;
+.item.selected {
+    background-color: blue;
+    color: white;
 }
