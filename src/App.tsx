@@ -41,14 +41,15 @@ function App(props: any) {
             {/*<ControlledInput/>*/}
 {/*            <ControlledCheckbox/>
             <Accordion titleValue={'menu'} collapsed={accordionCollapsed} onChange={() => {setAccordionCollapsed(!accordionCollapsed)} } items={[{title:"Mimuch", value: 1}, {title:"Valera", value: 2} , {title:"Artem", value: 3}, {title: "Vicktor", value:4}]} onClick={(value)=>{alert('user with ID ${id} should be happy')}}/>*/}
+            <UncontrolledAccordion titleValue={'menu'}/>
 
-            <Select items={[{title:"Mimuch", value: 1}, {title:"Valera", value: 2} , {title:"Artem", value: 3}, {title: "Vicktor", value:4}]} value={1}  onChange={()=>{}}/>
+{/*            <Select items={[{title:"Mimuch", value: 1}, {title:"Valera", value: 2} , {title:"Artem", value: 3}, {title: "Vicktor", value:4}]} value={1}  onChange={()=>{}}/>
 
             <Select2 onChange={setValue} value={value} items={[
                 {value: "1", title: "Minsk"},
                 {value: "2", title: "Moscow"},
                 {value: "3", title: "Kiev"}
-            ]}/>
+            ]}/>*/}
         </div>
     );
 }
