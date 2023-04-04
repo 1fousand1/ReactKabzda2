@@ -6,9 +6,6 @@ type PropsType = {
     onChange: (on: boolean) => void
 }
 
-
-
-
 const OnOff = (props: PropsType) => {
 
 
